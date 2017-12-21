@@ -1,0 +1,30 @@
+{
+  "name": "coinmarketcapportfoliocheck",
+  "version": "0.0.1",
+  "description": "Fetch from coin market cap",
+  "main": "out/index",
+  "types": "out/index",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha -r ./node_modules/ts-node/register ./test/spec/** --recursive",
+    "watch": "./node_modules/typescript/bin/tsc -w",
+    "dist": "./node_modules/typescript/bin/tsc",
+    "clean": "rm -f dist/*.js",
+    "prepublish": "npm run dist"
+  },
+  "dependencies": {
+    "console.table": "^0.8.0",
+    "string-kit": "^0.6.4",
+    "web-request": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.17",
+    "@types/chai": "^4.0.0",
+    "@types/core-js": "^0.9.41",
+    "@types/mocha": "^2.2.41",
+    "chai": "^3.5.0",
+    "mocha": "^3.4.2",
+    "ts-node": "^3.1.0",
+    "tslint": "^5.5.0",
+    "typescript": "^2.4.2"
+  }
+}
